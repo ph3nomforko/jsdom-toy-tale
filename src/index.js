@@ -13,3 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function fetchToys() {
+  fetch("http:localhost:3000/toys")
+  .then(response => response.json())
+  .then(json => showToys(json);
+}
+
+function showToys(json) {
+  let toyCollection = document.getElementById("toy-collection")
+}
